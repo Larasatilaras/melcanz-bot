@@ -30,7 +30,7 @@ Ketik ${usedPrefix}hint untuk bantuan
 handler.help = ['tebakanime']
 handler.tags = ['game']
 handler.command = /^tebakanime$/i
-
+handler.premium = true
 handler.game = true
 
 module.exports = handler
