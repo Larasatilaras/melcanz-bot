@@ -13,7 +13,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 handler.help = ['tiktok'].map(v => v + ' <url>')
 handler.tags = ['download']
 handler.command = /^(tiktok|tt)$/i
-
+handler.premium = true
 handler.limit = 1
 
 module.exports = handler
