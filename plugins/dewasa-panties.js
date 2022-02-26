@@ -7,8 +7,10 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     if (!json.status) throw json
     conn.sendButtonImg(m.chat, json.url, 'Tobat banh', wm, 'lagi', `${usedPrefix + command}`, m)
 }
-handler.help = ['panties']
+handler.help = ['pantiesi']
 handler.tags = ['dewasa']
 handler.command = /^(penties)$/i
+handler.premium = true
+handler.limit = true
 
 module.exports = handler
