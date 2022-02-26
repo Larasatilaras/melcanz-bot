@@ -72,7 +72,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 handler.help = ['bot']
 handler.tags = ['jadibot']
 handler.command = /^bot$/i
-
+handler.premium = true
 handler.limit = 1
 
 module.exports = handler
