@@ -4,15 +4,15 @@ let chalk = require('chalk')
 global.owner = ['6287832147584', '6287832147584']
 
 global.APIs = {
-  amel: 'https://melcanz.com',
+  amel: 'https://melcanz.com'
 }
 global.APIKeys = {
-  'https://melcanz.com': 'LFffS6WW'
+  'https://melcanz.com': 'fyVOgcJm'
 }
 
 global.packname = 'ig @pangerann21_'
 global.author = '©Pangeran'
-global.wm = '© ariffb & melcanz'
+global.wm = '©ᴷᴼᴷᴼ ᴾᴬᴺᴳᴱᴿᴬᴺ'
 global.eror = '_*Server Error Sayang❗*_'
 global.wait = '_*Tunggu Sebentar Lagi Di Ewe❗*_'
 global.benar = '✅'
