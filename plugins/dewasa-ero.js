@@ -10,5 +10,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 handler.help = ['ero']
 handler.tags = ['dewasa']
 handler.command = /^(ero)$/i
+handler.premium = true
+handler.limit = true
 
 module.exports = handler
