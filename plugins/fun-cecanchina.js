@@ -10,5 +10,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 handler.help = ['cecanchina']
 handler.tags = ['fun']
 handler.command = /^(cecanchina)$/i
+handler.premium = true
 
 module.exports = handler
