@@ -11,5 +11,6 @@ conn.sendFile(m.chat, json.cewe, json.cewe, 'cewe',m)
 handler.help = ['ppcp']
 handler.tags = ['fun']
 handler.command = /^(pp(cp|couple))$/i
+handler.premium = true
 
 module.exports = handler
