@@ -9,5 +9,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 handler.help = ['ceritahantu']
 handler.tags = ['fun']
 handler.command = /^(ceritahantu)$/i
+handler.premium = true
 
 module.exports = handler
