@@ -10,5 +10,6 @@ conn.sendButtonImg(m.chat, json.url, 'Baka', wm, 'lagi', '.baka',m)
 handler.help = ['baka']
 handler.tags = ['fun']
 handler.command = /^(baka)$/i
+handler.premium = true
 
 module.exports = handler
