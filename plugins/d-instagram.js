@@ -27,7 +27,7 @@ let handler = async (m, { conn, command, args, usedPrefix }) => {
 handler.help = ['instagram'].map(v => v + ' <url>')
 handler.tags = ['download']
 handler.command = /^(instagram|ig)$/i
-
+handler.premium = true
 handler.limit = 1
 
 module.exports = handler
