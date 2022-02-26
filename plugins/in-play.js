@@ -31,6 +31,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 handler.help = ['play'].map(v => v + ' <teks>')
 handler.tags = ['internet', 'download']
 handler.command = /^(p|play)$/i
+handler.premium = true
+handler.limit = true
 
 module.exports = handler
 
