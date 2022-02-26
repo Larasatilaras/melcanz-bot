@@ -32,7 +32,7 @@ terdapat *${json.jawaban.length}* jawaban${json.jawaban.find(v => v.includes(' '
 handler.help = ['family100']
 handler.tags = ['game']
 handler.command = /^f(amily)?100$/i
-
+handler.premium = true
 handler.game = true
 
 module.exports = handler
