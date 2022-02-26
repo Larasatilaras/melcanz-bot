@@ -10,5 +10,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 handler.help = ['hentai']
 handler.tags = ['dewasa']
 handler.command = /^(hentai)$/i
+handler.premium = true
+handler.limit = true
 
 module.exports = handler
