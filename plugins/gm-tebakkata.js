@@ -31,7 +31,7 @@ Ketik ${usedPrefix}teka untuk bantuan
 handler.help = ['tebakkata']
 handler.tags = ['game']
 handler.command = /^tebakkata/i
-
+handler.premium = true
 handler.game = true
 
 module.exports = handler
