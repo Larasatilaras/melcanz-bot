@@ -1,9 +1,9 @@
 let handler = async (m) => {
     m.reply(`
-┌「 *donasi* 」
-├ https://saweria.co/ariffb
-├ https://saweria.co/ameys
-├ https://trakteer.id/ariffb/tip
+┌「 *donasi banh* 」
+├ https://saweria.co/PangeranLord
+├ https://saweria.co/PangeranLord
+├ https://trakteer.id/PangeranLord/tip
 └────
 `.trim())
 }
