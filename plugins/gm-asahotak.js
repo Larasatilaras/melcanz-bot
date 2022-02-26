@@ -31,7 +31,7 @@ Ketik ${usedPrefix}ao untuk bantuan
 handler.help = ['asahotak']
 handler.tags = ['game']
 handler.command = /^asahotak/i
-
+handler.premium = true
 handler.game = true
 
 module.exports = handler
