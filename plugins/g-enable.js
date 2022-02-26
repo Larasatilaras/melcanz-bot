@@ -39,6 +39,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     'public',
     'restrict',
     'sw',
+    'simi',
   ]
   switch (type) {
     // group
@@ -292,6 +293,15 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
         throw false
       }
       set.sw = isEnable
+      break
+    case 'simi':
+       if (m.isGroup) {
+         if (!(isAdmin || isOwner)) {
+           global.dfail('admin', m, conn)
+           throw 0
+        }
+      }
+      chat.simi = isEnable
       break
     default:
       if (!/[01]/.test(command)) throw `
