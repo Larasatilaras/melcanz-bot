@@ -183,7 +183,7 @@ module.exports = {
           if (!('viewonce' in chat)) chat.viewonce = true
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
-          welcome: true,
+          welcome: false,
           detect: true,
           sWelcome: '',
           sBye: '',
@@ -195,12 +195,12 @@ module.exports = {
           clear: false,
           clearTime: (new Date() * 1) + 3600000 * 1,
           delete: true,
-          desc: true,
+          desc: false,
           download: true,
           getmsg: false,
           groupTime: 0,
           stiker: false,
-          viewonce: true,
+          viewonce: false,
         }
 
         let settings = global.db.data.settings[this.user.jid]
@@ -225,7 +225,7 @@ module.exports = {
           antitroli: true,
           game: true,
           group: false,
-          jadibot: false,
+          jadibot: true,
           private: false,
           restrict: false,
           self: false,
@@ -480,8 +480,8 @@ module.exports = {
               pp = await this.getProfilePicture(user)
             } catch (e) {
             } finally {
-              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'selamat datang, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
-                (chat.sBye || this.bye || conn.bye || 'sampai jumpa, @user!')).replace(/@user/g, '@' + user.split('@')[0])
+              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'selamat datang beban keluarga, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc ? String.fromCharCode(8206).repeat(4001) + groupMetadata.desc : '') :
+                (chat.sBye || this.bye || conn.bye || 'sampai jumpa beban keluarga, @user!')).replace(/@user/g, '@' + user.split('@')[0])
               let wel = API('amel', '/welcome2', {
                 username: this.getName(user),
                 groupname: this.getName(jid),
@@ -563,7 +563,7 @@ global.dfail = (type, m, conn) => {
     private: 'perintah ini hanya bisa digunakan dichat pribadi',
     admin: 'perintah ini hanya untuk admin grup',
     botAdmin: 'jadikan bot sebagai admin untuk menggunakan perintah ini',
-    unreg: 'daftar untuk menggunakan perintah ini:\n\nformat:\n*.reg nama.umur*\n\ncontoh:\n*.reg amel cantik.19*',
+    unreg: 'daftar untuk menggunakan perintah ini:\n\nformat:\n*.reg nama.umur*\n\ncontoh:\n*.reg Pangeran Ganteng.19*',
     game: 'gamenya dimatiin sama ownernya guys',
   }[type]
   if (msg) return m.reply(msg)
