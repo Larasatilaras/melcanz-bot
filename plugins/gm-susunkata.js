@@ -33,7 +33,7 @@ Ketik ${usedPrefix}suka untuk bantuan
 handler.help = ['susunkata']
 handler.tags = ['game']
 handler.command = /^susunkata/i
-
+handler.premium = true
 handler.game = true
 
 module.exports = handler
