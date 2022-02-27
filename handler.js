@@ -199,7 +199,7 @@ module.exports = {
           download: true,
           getmsg: false,
           groupTime: 0,
-          stiker: false,
+          stiker: true,
           viewonce: false,
         }
 
