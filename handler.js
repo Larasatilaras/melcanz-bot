@@ -184,12 +184,12 @@ module.exports = {
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
           welcome: false,
-          detect: true,
+          detect: false,
           sWelcome: '',
           sBye: '',
           sPromote: '',
           sDemote: '',
-          antiLink: true,
+          antiLink: false,
           autoread: false,
           broadcast: true,
           clear: false,
@@ -502,9 +502,9 @@ module.exports = {
         }
         break
       case 'promote':
-        text = (chat.sPromote || this.spromote || conn.spromote || '@user sekarang admin')
+        text = (chat.sPromote || this.spromote || conn.spromote || '_*Ciee Asik @user Sekarang Jadi Istriku:v*_')
       case 'demote':
-        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user sekarang bukan admin')
+        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '_*Mampuzz @user Sekarang Lu Bukan Jadi Istri Gw Lagi:v*_')
         text = text.replace(/@user/g, '@' + participants[0].split('@')[0])
         if (chat.detect) this.reply(jid, text)
         break
