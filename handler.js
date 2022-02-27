@@ -199,7 +199,7 @@ module.exports = {
           download: true,
           getmsg: false,
           groupTime: 0,
-          stiker: true,
+          stiker: false,
           viewonce: false,
         }
 
@@ -556,15 +556,15 @@ ${desc}
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: 'perintah ini hanya bisa digunakan oleh _*Pemilik Bot*_',
-    owner: 'perintah ini hanya bisa digunakan oleh _*Owner Bot*_',
-    premium: 'perintah ini hanya untuk pengguna _*Premium*_',
-    group: 'perintah ini hanya bisa digunakan digrup',
-    private: 'perintah ini hanya bisa digunakan dichat pribadi',
-    admin: 'perintah ini hanya untuk admin grup',
-    botAdmin: 'jadikan bot sebagai admin untuk menggunakan perintah ini',
+    rowner: '_*Emang Lo Pemilik Bot Nye Tolol❗*_',
+    owner: '_*Emang Lo Owner Bot Nye Tolol❗*_',
+    premium: '_*Khusus Jadi Istri Saya Saja❗(PREMIUM)*_',
+    group: '_*Fitur Ini Hanya Bisa Di Gunakan Di Dalam Group Tolol*_',
+    private: 'G Bisa Di Dalam Group Sayang, Bisa nya Di Chat Pribadi😚*_',
+    admin: '_*Emang Lo Admin Group Sini Tolol❗*_',
+    botAdmin: '_*Jadikan Aku Suamimu Dulu, Baru Bisa Menggunakan Fitur Ini😚*_',
     unreg: 'daftar untuk menggunakan perintah ini:\n\nformat:\n*.reg nama.umur*\n\ncontoh:\n*.reg Pangeran Ganteng.19*',
-    game: 'gamenya dimatiin sama ownernya guys',
+    game: '_*Game nya dimatiin sama Pangeran nya guys😭',
   }[type]
   if (msg) return m.reply(msg)
 }
