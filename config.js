@@ -10,9 +10,9 @@ global.APIKeys = {
   'https://melcanz.com': 'fyVOgcJm'
 }
 
-global.packname = 'ig @pangerann21_'
-global.author = '©Itsmelaras'
-global.wm = '©ItsmeLaras'
+global.packname = 'ig @itzmelaras_'
+global.author = '©AraaChann'
+global.wm = '©AraaBotz'
 global.eror = '_*Server Error Sayang❗*_'
 global.wait = '_*Tunggu Sebentar Lagi Di Ewe❗*_'
 global.benar = '✅'
