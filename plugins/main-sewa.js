@@ -5,7 +5,7 @@ let handler = async (m, { conn }) => {
     let listMessage = {
         "title": "melcanz-bot",
         "description": `
-*KOKO PANGERAN*
+*AraaBotz*
         
 1 Grup / 30 Hari
 Rp. 15,000 Dana, Ovo
@@ -16,7 +16,7 @@ Rp. 5,000 Dana, Ovo
 Rp. 10,000 Pulsa Axis/XL
 
 tertarik? hubungi:
-@6287832147584 (Pangeran)
+@6285759662798 (LarasXraa)
 `.trim(),
         "listType": "PRODUCT_LIST",
         "productListInfo": {
@@ -36,7 +36,7 @@ tertarik? hubungi:
             },
             "businessOwnerJid": "6283128734012@s.whatsapp.net"
         },
-        "footerText": "wa.me/6287832147584"
+        "footerText": "wa.me/6285759662798"
     }
     conn.sendMessage(m.chat, listMessage, 'listMessage', { quoted: m, contextInfo: { mentionedJid: conn.parseMention(listMessage.description) } })
 }
